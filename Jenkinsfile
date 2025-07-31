@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'javac Difference.java'
+                bat 'javac Difference.java'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'java Difference'
+                bat 'java Difference'
             }
         }
     }
